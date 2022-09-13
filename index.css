@@ -1,78 +1,166 @@
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 21px;
+    font-size: 0.9rem;
     font-weight: 300;
     margin: 0;
 }
-img{
-    width: 200px;
+#pic{
+    width: 30%;
+    border: 8px solid white;
     border-radius: 50%;
+    
 }
 
 .container {
-    width: 570px;
+    padding: 0 2.5em;
+    max-width: 570px; 
+    width: 100%;
     margin: 0 auto;
 }
 
 .bold-text {
     font-weight: 900;
     display: block;
+    color: #99D930;
 }
-
-h1 .bold-text {
-    font-size: 80px;
-}
-
-h2 .bold-text {
-    font-size: 60px;
-}
-
+ 
 h1,
 h2 {
     font-weight: 300;
 }
 
-h1 {
-    font-size: 60px;
-}
-
 h2 {
-    font-size: 42px;
+    font-size: 2.8rem;
+    margin-top: 0;
+    border-top:  solid 1px #c4c4c4;
+    border-bottom:  solid 1px #c4c4c4;
+    padding: 0.8rem 0;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 900;
+    margin-bottom: 0;
 }
 
 a {
-    color: #99D930;
+    display: inline-block;
+    background-color: #99D930;
     font-weight: 900;
+    text-decoration: none;
+    color: black;
+    padding: 0.8em;
 }
 
 a:hover,
 a:focus {
-    color: #131313;
+    background-color:#252525 ;
+    color: #FFF;
 }
 
 .small-text {
-    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 0;
+    color: #99D930;
 } 
 
 header,
 section {
-    padding: 100px 0;
+    padding: 5.2em 0;
 }
 
 header {
     background-color: #d7d7d7;
 }
 
+/* .about-me,.clr,
+.articles{
+    max-width: 900px;
+    margin:0 auto;
+} */
+
 .about-me {
     background-color: #ffeaea;
+    
 }
 
 .articles {
     background-color: #eaf9ff;
+}
+
+.clr{
+    background-color: #252525;
+    color: #FFF;
+}
+
+.splitter{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio{
+    width: 100%;
+}
+
+.work{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item1,
+.portfolio-item2,
+.portfolio-item3{
+    width: 30%;
+}
+
+
+.portfolio img{
+    width: 100%;
+    height: 15em;
+}
+
+@media (min-width:750px){
+    h1{
+        font-size:3.4rem;
+    }
+
+    .about-me{
+        width: 50%;
+        padding-right: 3em;
+    }
+
+    .container-flex{
+        font-size: 1.3125rem;
+        display: flex;
+    }
+
+    .articles{
+        width: 50%;
+        background-color: #99D930;
+        padding-right: 3em;
+    }
+
+    .articles .bold-text{
+        color: red;
+    }
+
+    .articles h2{
+        color: #252525;
+        font-weight: 600;
+        margin-bottom: 0;
+        border-bottom: 1px solid #252525;
+        border-top: 1px solid #252525;
+    }
+
+    .articles a{
+        color: #eaf9ff;
+        background-color: #252525;
+    }
+
+    .articles a:hover{
+        color: #252525;
+        background-color: antiquewhite;
+    }
 }
