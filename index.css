@@ -6,15 +6,14 @@ body {
     margin: 0;
 }
 #pic{
-    width: 30%;
+    width: 20%;
     border: 8px solid white;
     border-radius: 50%;
     
 }
 
 .container {
-    padding: 0 2.5em;
-    max-width: 570px; 
+    padding-right: 4.5em; 
     width: 100%;
     margin: 0 auto;
 }
@@ -114,7 +113,9 @@ header {
 .portfolio-item3{
     width: 30%;
 }
-
+.portfolio h2{
+    display: inline-block;
+}
 
 .portfolio img{
     width: 100%;
@@ -122,12 +123,14 @@ header {
 }
 
 @media (min-width:750px){
+  
     h1{
         font-size:3.4rem;
     }
 
     .about-me{
         width: 50%;
+        padding-left: 3rem;
         padding-right: 3em;
     }
 
@@ -139,6 +142,7 @@ header {
     .articles{
         width: 50%;
         background-color: #99D930;
+        padding-left: 3rem;
         padding-right: 3em;
     }
 
